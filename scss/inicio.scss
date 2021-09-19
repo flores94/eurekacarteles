@@ -1,0 +1,330 @@
+/*import*/
+@import "generales";
+@import "diseno";
+@import "carteleria";
+@import "normalize";
+@import "footer";
+@import "mediaquery";
+
+/* fin del import*/
+
+/* header */
+
+header {
+    background-color: var(--lemon);
+    text-align: center;
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    min-height: 6vh;
+    width: 100vw;
+    padding: 1rem, 4rem;
+    z-index: 10 !important;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(32, 30, 2);
+}
+
+header label {
+    display: none;
+}
+
+header label:hover img {
+    cursor: pointer;
+    background-color: var(--titanium-yellow);
+}
+
+header picture a img {
+    max-width: 320px;
+    margin-left: 3rem;
+    padding: 1.5rem 0rem;
+    position: absolute !important;
+}
+.menu-header {
+    margin-right: 2rem;
+
+    .menuheader{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        .menuheader__item {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 1.7rem;
+            }
+
+        .store{
+            border: #00a7e1ff 2px solid;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-family: abolition;
+            padding: 1.7rem;
+            color: white;
+            background-color: #00a7e1ff;
+          }
+          
+          .store:hover {
+            border: rgb(0, 92, 122) 2px solid;
+            border-radius: 10px;
+            color: rgb(0, 92, 122);
+            font-size: 1.2rem;
+            color: white;
+            background-color: rgb(0, 92, 122);
+          }
+           
+        .menuheader__item:hover a{
+                background-color:  var(--titanium-yellow); 
+                transition: 0.2s ease-in-out;
+                padding: 1.7rem;
+            } 
+        .menuheader__item:hover ul{
+                background-color:  var(--titanium-yellow);
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                transition: 0.2s ease-in-out;
+                padding: 1.7rem;
+            }   
+        }
+ }
+
+
+ @media (max-width: 900px) {
+
+    header {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    header label {
+        display: block;
+        position:relative;
+        background-color: var(--lemon);
+        
+    }
+
+    header picture img {
+        max-width: 230px;
+        margin-left: 1rem;
+        padding: 1.5rem 0rem;
+        z-index: 1;
+    }
+
+    nav .menu-header {
+        display: none;
+        position: absolute;
+        width: 40%;
+        background-color: var(--lemon);
+        top: 50px;
+        justify-content: left;
+    }
+
+    .menuheader__item:hover ul{
+        width: 40%
+    }
+
+    nav ul {
+        flex-direction: column;
+
+    }
+
+    #btn-menu:checked ~ .menu-header{
+        margin: 0%;
+        display: block;
+        
+
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    header picture img {
+        max-width: 170px;
+    }
+}
+/* fin del header*/
+
+section.grid-nosotros{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.linea{
+    border:6px groove #ccc;
+}
+
+.lineatitulo {
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+.titulos-categorias h2 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+body h2:hover {
+    transition: ease-in 1s, ease-out 1s;
+    font-size: 3rem;
+}
+
+#nosotros-titulo h2{
+    color: #888c9aff;
+}
+
+.padre {
+    box-sizing: border-box;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+.hijo1{
+    position: relative;
+    width: 40%;
+}
+.hijo2 {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    padding: 5%;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+#hijotexto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.diseno{
+    background-color: #FF36AB;
+    padding: 10px;
+}
+
+.contenedor-de-imagenes1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.contenedor-diseno {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1000px) {
+
+    .contenedor-de-imagenes1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        grid-gap: 10px;
+        margin-top: 10%;
+    }
+    
+    .contenedor-diseno {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .contenedor-de-imagenes1{
+        padding: 20px;
+        margin-top: 10%;
+    }
+    
+    .contenedor-diseno {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.carteleria {
+    max-width: 100%;
+	padding: 10px;
+    margin-top: 20px;
+    background-color: #101935;
+}
+
+.carteleria  .imagen1 {
+    padding: 2rem;
+}
+
+.imagen1 img {
+    width: 100%;
+}
+
+.padre-cliente {
+    min-height: 40vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: subgrid 1fr 1fr;
+
+    .padre-cliente2 {
+        background-color:  #00a7e1ff;
+        height:  26vh;
+        margin-top: 12vh;
+
+    }
+
+    .imagen__fortuna {
+       text-align: center;
+    }
+    .imagen__fortuna--left {
+        text-align: left;
+    }
+    .gato-fortuna{
+        max-width: 80%;
+
+    }
+
+
+    .titulos-cliente{
+        h2{
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 800 !important;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+    }
+}
+
+
+
+
