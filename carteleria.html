@@ -1,62 +1,176 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EUREKA CARTELES - Cartelería, ploteos, letras corporeas</title>
+    <title>EUREKA CARTELES - Diseño gráfico y cartelería</title>
+    <meta name="description" content="Estudio de diseño y Gráfica, nos encargamos de elaborar toda tu iimagen coorporativa
+    soluciones integrales para tu campaña publicitaria.">
+    <meta name="keywords" content="tucuman, diseño, grafica, grafico, carteles, publicidad, logos, argentina, desarrolloweb,
+    letrascorporeas, vinilos, ploteos, letreros, banner, estudio">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;1,800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
+
 <body>
     <header>
+        <nav class="menuheader"></nav>
         <picture>
             <a href="index.html">
-                <img src="img/logoheader.png" alt="">
+                <img src="img/logoheader.png" class="menu-logo" alt="">
             </a>
-       </picture>
-       <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"> <img src="img/btn.png" alt="">
-        </label>
-     <nav class="menu-header">
-        <ul class="menuheader">
-            <li class="menuheader__item menuheader__item"><a href="#nosotros">NOSOTROS</a></li>
-            <li class="menuheader__item menuheader__item"><a href="diseno.html">DISEÑO</a></li>
-            <li class="menuheader__item menuheader__item"><a href="carteleria.html">CARTELERIA</a></li>
-            <li class="menuheader__item menuheader__item"><a href="#clientes">CLIENTES</a></li>
-            <li class="menuheader__item menuheader__item"><a href="#contactanos">CONTACTANOS</a>
-              <ul class="menuheader2">
-                  <li class="menuheader__item2 menuheader__item2"><a id="whatsapp-menu" href="whatsapp">whatsapp</a></li>
-                  <li class="menuheader__item2 menuheader__item2"><a id="mail-menu" href="mail">mail</a></li>
-              </ul>
-           </li>
-        </ul>
-     </nav>
+        </picture>
+            <ul class="cont-menu_items active" id="menu_items">
+                <li class="menuheader--tittle"><a href="diseno.html">DISEÑO</a></li>
+                <li class="menuheader--tittle"><a href="carteleria.html">CARTELERIA</a></li>
+                <li class="menuheader--tittle"><a href="#contactanos">CONTACTANOS</a></li>
+                <li class="eurekaobjetos" ><a href="https://www.instagram.com/eurekaobjetostuc/" target="_blank">EUREKAOBJETOS</a></li>
+            </ul>
+            <span class="btn_menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+            </span>
+        </nav>
     </header>
-    <section class="carteleria" id="#carteleria">
-        <div class="titulos-categorias">
-          <h2>CARTELERIA</h2>
-        </div>
-         <div class="container">
-             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                 <div class="imagen1">
-                     <img src="img/corporea 1.jpg" alt="">
-                 </div>
-                 <div class="imagen1">
-                    <img src="img/corporea 2.jpg" alt="">
-                </div>
-                <div class="imagen1">
-                    <img src="img/corporea 3.jpg" alt="">
-                </div>
-                <div class="imagen1">
-                    <img src="img/corporea 4.jpg" alt="">
+    <main>
+        <section class="carteleria-pag" id="#carteleria">
+            <div class="titulos-categorias2">
+                <h2>CARTELERIA</h2>
+            </div>
+        <section class="about container">
+            <div class="about__texts">
+                <h3 class="subtitles">Letras Corporeas Chapa</h3>
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.</p>
+            </div>
+            <figure class="about__img">
+                <img src="img/corporea 1.jpg" alt="" class="about__picture">
+            </figure>
+            <figure class="about__img about__img--left">
+                <img src="img/corporea 3.jpg" alt="" class="about__picture">
+            </figure>
+            <div class="about__texts up">
+                <h3 class="subtitles">Letras Corporeas Acrilico</h3>
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.</p>
+            </div>
+            <div class="about__texts">
+                <h3 class="subtitles">Letras Corporeas Polifan</h3>
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.</p>
+            </div>
+            <figure class="about__img">
+                <img src="img/corporea 6.jpg" alt="" class="about__picture">
+            </figure>
+            <figure class="about__img about__img--left">
+                <img src="img/corporea 4.jpg" alt="" class="about__picture">
+            </figure>
+            <div class="about__texts">
+                <h3 class="subtitles">Carteles Luminosos</h3>
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.</p>
+            </div>
+            <div class="about__texts">
+                <h3 class="subtitles">Vinilo Impreso (PLOTEOS)</h3>
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.</p>
+            </div>
+            <figure class="about__img">
+                <img src="img/corporea 2.jpg" alt="" class="about__picture">
+            </figure>
+            <figure class="about__img about__img--left">
+                <img src="img/corporea 5.jpg" alt="" class="about__picture">
+            </figure>
+            <div class="about__texts">
+                <h3 class="subtitles">Vinilo de Corte</h3>
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.
+                    ab id voluptatem quae optio, debitis nulla? Rerum sequi, at mollitia cum, 
+                    possimus animi eius reprehenderit vitae placeat saepe quisquam.</p>
+            </div>
+            <!--<div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div class="imagen1">
+                        <img src="img/corporea 1.jpg" alt="">
+                    </div>
+                    <div class="imagen1">
+                        <img src="img/corporea 2.jpg" alt="">
+                    </div>
+                    <div class="imagen1">
+                        <img src="img/corporea 3.jpg" alt="">
+                    </div>
+                    <div class="imagen1">
+                        <img src="img/corporea 4.jpg" alt="">
+                    </div>
                 </div>
             </div>
-         </div>
-         <li><a href="#carteleria.html">Ver más:</a></li>
+            <li><a href="#carteleria.html">Ver más:</a></li>-->
+        </section>
     </section>
+    </main>
+   <footer>
+        <section class="contactanos" id="contactanos">
+            <div class="background-pc">
+               <div class="titulos-categorias3">
+                   <h2>CONTACTANOS</h2>
+               </div>
+               <div class="contanto-mail">
+                fndisenio@gmail.com // 3816431776
+               <!--<ul>
+                    <li><a href="#" class="gmail"><i class="fab fa-mail">fndisenio@gmail.com</i></a></li>
+                    <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp">3816431776</i></a></li>
+                </ul> -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <nav>
+                <div class="rrss">
+                    <ul>
+                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i> </a></li>
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#" class="behance"><i class="fab fa-behance"></i> </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <div class="copywright">
+            <p>copywright</p>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+        <script src="js/owlcarousel.js"></script>
+        <script src="./js/app.js"></script>
 </body>
+
+</html>

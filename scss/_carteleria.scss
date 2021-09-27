@@ -1,0 +1,58 @@
+.carteleria-pag{
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px;
+    max-width: 1200px;
+}
+.titulos-categorias2 h2{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    color: #888c9aff; 
+    padding-bottom: 20px;
+    text-align: center;
+}
+    .titulos-categorias2 h2:hover {
+        transition: ease-in 1s, ease-out 1s;
+        font-size: 6rem;
+    }
+
+.subtitles{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #101935ff;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img{
+    text-align: center;
+}
+
+.about__img--left{
+    text-align: left;
+}
+
+.about__picture {
+    max-width: 80%;
+}
+
+.about__parrafo{
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #101935ff;
+}

@@ -1,13 +1,196 @@
+@media (max-width: 950px) {
+    header{
+       .menu-logo {
+           max-width: 200px;
+           margin-left: 2rem;
+           position: relative;
+       }
+   
+       .cont-menu_items{
+           
+           .menuheader--tittle{
+               padding: 1rem; 
+               padding-top: 1.7rem;
+               padding-bottom: 1.7rem;
+           }
+   
+           .menuheader--tittle:hover a{
+               padding: 1rem;
+               padding-top: 1.7rem;
+               padding-bottom: 1.7rem;
+           } 
+   
+           .eurekaobjetos{
+               padding-top: 1rem;
+               padding-bottom: 1rem;
+   
+               a{
+   
+                   padding: 1rem;
+                   padding-top: 1.7rem;
+                   padding-bottom: 1.7rem;
+   
+               }
+           }
+   
+           .eurekaobjetos:hover a{
+               padding: 1rem;
+               padding-top: 1.7rem;
+               padding-bottom: 1.7rem;
+             }
+       }
+   
+     }
+   
+   }
+   
+   @media (max-width: 830px) {
+       header{
+           height: 65px;
+   
+   
+           .menu-logo {
+               display: flex;
+               max-width: 160px;
+               margin-left: 2rem;
+               position: absolute !important;
+               z-index: 4;
+           }
+   
+           .cont-menu_items {
+               position: absolute;
+               width: 100vw;
+               height: 400px;
+               background-color: var(--titanium-yellow);
+               box-shadow: 2px 0px 5px 2px rgb(165, 149, 149);
+               flex-direction: column;
+               transition: all .4s;
+               text-align: center;
+   
+               
+               .active {
+                   transform: translate(-600px);
+                   background-color: black;
+               }
+   
+           
+           
+               .menuheader--tittle{
+                   padding: 1rem; 
+                   padding-top: 1.7rem;
+                   padding-bottom: 1.7rem;
+               }
+       
+               .menuheader--tittle:hover a{
+                   padding: 1rem;
+                   padding-top: 1.7rem;
+                   padding-bottom: 1.7rem;
+               } 
+       
+               .eurekaobjetos{
+                   padding-top: 1rem;
+                   padding-bottom: 1rem;
+       
+                   a{
+       
+                       padding: 1rem;
+                       padding-top: 1.7rem;
+                       padding-bottom: 1.7rem;
+       
+                   }
+               }
+       
+               .eurekaobjetos:hover a{
+                   padding: 1rem;
+                   padding-top: 1.7rem;
+                   padding-bottom: 1.7rem;
+                 }
+           }
+   
+           .btn_menu {
+               display: flex;
+               justify-content: flex-end;
+               z-index: 4;
+               position: relative;
+           }
+   
+       
+       }
 
-@media (max-width: 900px) {
+       
+          /* NOSOTROS */
+
+           
+          .nosotros-pag {
+            grid-template-columns: 1fr !important;
+        }
+
+        /* CLIENTES */
+
+        .padre-cliente {
+            width: 100%;
+            height:  50vh !important;
+            background:#00a7e1ff;
+            margin-top: 25vh !important;
+            margin-bottom: 5vh !important;
+        } 
+
+          .subpadre-cliente {
+            grid-template-columns: 1fr !important;
+        }
+
+        
+        .titulos-cliente {
+            text-align: center !important;
+            margin-bottom: 30px;
+            margin-top: -30vh !important;
+        
+        }
+        
+        
+        .gato-fortuna {
+            max-width: 30vh !important;
+            margin-top: -40vh !important;
+        
+        }
+
+        .cliente-texto {
+            text-align: center !important;
+        }
 
 
-}
+          /* INICIO ABOUT */
+
+           
+              .about{
+               grid-template-columns: 1fr;
+           }
+           
+           .about.container{
+               padding-top: 3rem;
+           }
+           
+           .about__img--left{
+               text-align: center;
+           }
+           
+           .about___texts .up:last-clild {
+               grid-row: 3 / 4;
+           }
+ }
 
 
 
 
-@media screen and (max-width:500px){
+   @media screen and (max-width:830px) and (orientation:landscape) {
+       .cont-menu_items li{
+           margin: 5px 0 0 0;
+       }
+   
+       .cont-menu_items {
+           overflow: scroll;
+           height: calc(78%);
+       }
 
 
 }
